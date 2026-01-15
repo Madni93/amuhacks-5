@@ -1,11 +1,18 @@
 import './App.css'
-//import { Button } from './components/ui/button'
 import { Navbar } from './components/navbar';
+import AboutOurStuff from './components/AboutOurStuff';
+import HorizontalImageSlider from './components/HorizontalImageSlider';
+import Team from './Pages/Team';
 
 function App() {
 
   return (
-    <div>
+    <div className='flex flex-col'>
+      <Navbar />
+      <HorizontalImageSlider />
+      <AboutOurStuff />
+      <Team />
+      
     </div>
   )
 }

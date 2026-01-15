@@ -23,13 +23,13 @@ const AboutOurStuff = () => {
         {/* Right Side: Content */}
         <div className="flex flex-col space-y-8">
           <div className="space-y-2">
-            <div className="flex items-center space-x-3 text-[#93E9BE]">
-              <div className="h-[1px] w-12 bg-[#93E9BE]" />
+            <div className="flex items-center space-x-3 text-[#71d2a1]">
+              <div className="h-[1px] w-12 bg-[#7bd8a9]" />
               <span className="text-xs font-black uppercase tracking-[0.3em]">The Legacy</span>
             </div>
             <h2 className="text-[#2C4A41] text-6xl md:text-7xl font-light tracking-tighter leading-none">
               About Our <br />
-              <span className="text-[#93E9BE] font-black italic">Event</span>
+              <span className="text-[#71d2a1] font-black italic">Event</span>
             </h2>
           </div>
 
@@ -39,17 +39,17 @@ const AboutOurStuff = () => {
 
           <div className="grid grid-cols-2 gap-8 py-4">
             <div>
-              <span className="block text-[#93E9BE] text-4xl font-black tracking-tighter">10k+</span>
+              <span className="block text-[#71d2a1] text-4xl font-black tracking-tighter">10k+</span>
               <span className="text-[#2C4A41]/40 text-xs font-bold uppercase tracking-widest">Prize Pool</span>
             </div>
             <div>
-              <span className="block text-[#93E9BE] text-4xl font-black tracking-tighter">36h</span>
+              <span className="block text-[#71d2a1] text-4xl font-black tracking-tighter">36h</span>
               <span className="text-[#2C4A41]/40 text-xs font-bold uppercase tracking-widest">Hardcore Hacking</span>
             </div>
           </div>
 
-          <button className="w-fit flex items-center space-x-4 bg-[#2C4A41] text-[#F0EAD6] px-10 py-4 rounded-full font-bold hover:bg-[#93E9BE] hover:text-[#2C4A41] transition-all hover:shadow-xl hover:shadow-[#93E9BE]/30">
-            <span>GET STARTED</span>
+          <button className="w-fit flex items-center space-x-4 bg-[#71d2a1] text-[#2C4A41]/70 px-10 py-4 rounded-full font-bold hover:bg-[#93E9BE] hover:text-[#2C4A41] transition-all hover:shadow-xl hover:shadow-[#93E9BE]/30">
+            <span>JOIN WHATSAPP COMMUNITY</span>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7-7 7" /></svg>
           </button>
         </div>
