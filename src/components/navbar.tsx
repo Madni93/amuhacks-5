@@ -35,9 +35,10 @@ const ListItem = ({ className, title, children, href }: { className?: string; ti
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 ">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="w-full flex h-14 px-4 md:px-6">
-        <NavigationMenu className="w-full max-w-none">
+        <NavigationMenu className="w-full max-w-none z-10 flex justify-around">
+          <div className="logo">Logo</div>
           <NavigationMenuList className="flex w-full justify-start gap-6">
             <NavigationMenuItem>
               <a href="/" className={navigationMenuTriggerStyle()}> {/* Use <Link to="/"> if React Router */}
@@ -45,35 +46,30 @@ export function Navbar() {
               </a>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>Products</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-[#71d2a1] data-[state=open]:bg-[#349665]">Events</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
-                  <ListItem href="/products/widgets" title="Widgets">
-                    Customizable widgets for your app.
+                  <ListItem href="/products/widgets" title="About">
+                    About our events
                   </ListItem>
-                  <ListItem href="/products/gadgets" title="Gadgets">
-                    Advanced gadgets with AI integration.
+                  <ListItem href="/events/schedule" title="Schedule">
+                    Event schedules and details.
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuTrigger>About</NavigationMenuTrigger>
+              <NavigationMenuTrigger className="bg-[#71d2a1] data-[state=open]:bg-[#349665]">About</NavigationMenuTrigger>
               <NavigationMenuContent>
                 <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   <ListItem href="/about/team" title="Our Team">
-                    Meet the people behind the product.
+                    Meet the people behind.
                   </ListItem>
                   <ListItem href="/about/contact" title="Contact Us">
-                    Get in touch with support.
+                    Get in touch with us.
                   </ListItem>
                 </ul>
               </NavigationMenuContent>
-            </NavigationMenuItem>
-            <NavigationMenuItem>
-              <a href="/docs" className={navigationMenuTriggerStyle()}> {/* Use <Link to="/docs"> if React Router */}
-                Documentation
-              </a>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

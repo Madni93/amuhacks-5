@@ -2,11 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 
 const HorizontalImageSlider = () => {
   const images = [
-    'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600&h=900&fit=crop',
+    'public\\assests\\group.jpg',
     'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1600&h=900&fit=crop',
     'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop',
-    'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=1600&h=900&fit=crop',
-    'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1600&h=900&fit=crop'
+    'public/assests/group.jpg',
+    'https://drive.google.com/file/d/1_e9_N4OeSqg3UpqeY-OK9zL2VlRcwRow/view?usp=drive_link'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -80,11 +80,11 @@ const HorizontalImageSlider = () => {
         </svg>
       </button>
 
-      <div className="absolute left-12 top-12 z-50">
+      <div className="absolute left-12 top-12 z-10">
         <div className="flex items-center space-x-4">
-          <div className="h-1 w-12 bg-[#93E9BE] rounded-full" />
+          <div className="h-1 w-12 text-[#71d2a1] rounded-full" />
           <h1 className="text-[#F0EAD6] text-sm font-black uppercase tracking-[0.5em] drop-shadow-md">
-            AMU HACKS 5.0
+            AMUHACKS5.0
           </h1>
         </div>
       </div>
@@ -95,25 +95,25 @@ const HorizontalImageSlider = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className="relative flex items-center justify-center p-2"
+              className="relative flex items-center justify-center p-2 bg-white rounded-full hover:scale-110 transition-transform"
             >
               <div className={`transition-all duration-700 rounded-full ${
                 index === currentIndex 
-                  ? 'w-12 h-1.5 bg-[#93E9BE]' 
-                  : 'w-2 h-2 bg-[#F0EAD6]/60 hover:bg-[#F0EAD6]'
+                  ? 'w-12 h-1.5 text-black bg-[#71d2a1]' 
+                  : 'w-2 h-2 bg-[#71d2a1] hover:bg-[#000000]'
               }`} />
             </button>
           ))}
         </div>
 
-        <div className="bg-[#93E9BE]/20 backdrop-blur-xl border border-[#F0EAD6]/30 px-8 py-3 rounded-full flex items-center space-x-6">
+        {/* <div className="bg-[#93E9BE]/20 backdrop-blur-xl border border-[#F0EAD6]/30 px-8 py-3 rounded-full flex items-center space-x-6">
            <span className="text-[#F0EAD6] text-xs font-bold uppercase tracking-widest">Slide</span>
            <div className="flex items-baseline space-x-1">
              <span className="text-[#F0EAD6] text-2xl font-bold">{currentIndex + 1}</span>
-             <span className="text-[#93E9BE] text-sm">/</span>
+             <span className="text-[#e1fdef] text-sm">/</span>
              <span className="text-[#F0EAD6]/70 text-sm font-medium">{images.length}</span>
            </div>
-        </div>
+        </div> */}
       </div>
 
       <div className="absolute inset-6 border-[0.5px] border-[#F0EAD6]/20 pointer-events-none rounded-xl" />
