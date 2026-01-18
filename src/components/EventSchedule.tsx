@@ -179,9 +179,9 @@ const EventSchedule: React.FC = () => {
         {/* FOOTER CTA */}
         <div className="w-full flex flex-col items-center">
             <div className="bg-[#2C4A41] border border-[#93E9BE]/30 px-12 py-6 rounded-full flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-12 shadow-2xl">
-               <div className="text-center md:text-left">
+               <div className="text-center md:text-left w-full">
                   <h4 className="text-[#93E9BE] font-black uppercase tracking-widest text-xs mb-1">Registrations Open</h4>
-                  <p className="text-[#F0EAD6] text-sm font-medium opacity-70">Participate in the National Technical Festival.</p>
+                  <p className="text-[#F0EAD6] text-sm font-medium opacity-70">Participate AMUHACKS5.0</p>
                </div>
                <button className="bg-[#93E9BE] text-[#2C4A41] px-10 py-4 rounded-full font-black uppercase tracking-widest text-sm hover:bg-[#F0EAD6] transition-all">
                  Register Now
