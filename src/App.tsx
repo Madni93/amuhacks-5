@@ -4,6 +4,7 @@ import AboutOurStuff from './components/AboutOurStuff';
 import HorizontalImageSlider from './components/HorizontalImageSlider';
 import Team from './Pages/Team';
 import Footer from './components/shadcn-studio/blocks/footer-component-01/footer-component-01';
+import EventSchedule from './components/EventSchedule';
 
 function App() {
 
@@ -13,6 +14,8 @@ function App() {
       <HorizontalImageSlider />
       <AboutOurStuff />
       <Team />
+      <EventSchedule />
+      <Footer />
     </div>
   )
 }
