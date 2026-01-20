@@ -2,11 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 
 const HorizontalImageSlider = () => {
   const images = [
-    'public\\assests\\group.jpg',
+    'src/assets/conference.jpg',
     'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1600&h=900&fit=crop',
-    'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1600&h=900&fit=crop',
-    'public/assests/group.jpg',
-    'https://drive.google.com/file/d/1_e9_N4OeSqg3UpqeY-OK9zL2VlRcwRow/view?usp=drive_link'
+    'src/assets/conference.jpg',
+    'src/assets/conference.jpg',
+    'src/assets/conference.jpg'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -54,7 +54,7 @@ const HorizontalImageSlider = () => {
             <img
               src={img}
               alt={`Slide ${index + 1}`}
-              className="h-full w-full object-cover select-none"
+              className="h-full w-full object-cover overflow-hidden select-none"
             />
           </div>
         ))}
@@ -64,7 +64,7 @@ const HorizontalImageSlider = () => {
       
       <button
         onClick={goToPrevious}
-        className="absolute left-10 top-1/2 z-50 -translate-y-1/2 rounded-full border-2 border-[#F0EAD6] bg-[#93E9BE]/30 p-5 text-[#F0EAD6] backdrop-blur-md transition-all hover:bg-[#93E9BE] hover:scale-110 active:scale-90 shadow-lg shadow-[#93E9BE]/20"
+        className="absolute left-10 top-1/2 z-50 -translate-y-1/2 bg-transparent p-5 text-[#F0EAD6] backdrop-blur-md transition-all hover:scale-110 active:scale-90"
       >
         <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
@@ -73,21 +73,22 @@ const HorizontalImageSlider = () => {
 
       <button
         onClick={goToNext}
-        className="absolute right-10 top-1/2 z-50 -translate-y-1/2 rounded-full border-2 border-[#F0EAD6] bg-[#93E9BE]/30 p-5 text-[#F0EAD6] backdrop-blur-md transition-all hover:bg-[#93E9BE] hover:scale-110 active:scale-90 shadow-lg shadow-[#93E9BE]/20"
+        className="absolute right-10 top-1/2 z-50 -translate-y-1/2 rounded-full
+         p-5 text-[#F0EAD6] backdrop-blur-md transition-allhover:scale-110 active:scale-90"
       >
         <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7" />
         </svg>
       </button>
 
-      <div className="absolute left-12 top-12 z-10">
+      {/* <div className="absolute left-12 top-12 z-10">
         <div className="flex items-center space-x-4">
           <div className="h-1 w-12 text-[#71d2a1] rounded-full" />
           <h1 className="text-[#F0EAD6] text-sm font-black uppercase tracking-[0.5em] drop-shadow-md">
             AMUHACKS5.0
           </h1>
         </div>
-      </div>
+      </div> */}
 
       <div className="absolute bottom-12 w-full z-50 flex flex-col items-center space-y-8">
         <div className="flex items-center space-x-5">
@@ -95,12 +96,12 @@ const HorizontalImageSlider = () => {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
-              className="relative flex items-center justify-center p-2 bg-white rounded-full hover:scale-110 transition-transform"
+              className="relative flex items-center justify-center p-2 bg-transparent rounded-full hover:scale-110 transition-transform"
             >
               <div className={`transition-all duration-700 rounded-full ${
                 index === currentIndex 
-                  ? 'w-12 h-1.5 text-black bg-[#71d2a1]' 
-                  : 'w-2 h-2 bg-[#71d2a1] hover:bg-[#000000]'
+                  ? 'w-12 h-1.5 text-black bg-[#fffcfc]' 
+                  : 'w-2 h-2 bg-[#ffffff] hover:bg-[#000000]'
               }`} />
             </button>
           ))}

@@ -8,6 +8,7 @@ type FacultyMember = {
 
 type LeadTeam = {
   name: string;
+  role: string;
   class: string;
   imageUrl: string;
 };
@@ -40,208 +41,175 @@ const Team = () => {
   const faculty: FacultyMember[] = [
     {
       name: "Prof. Arman Rasool Faridi",
-      designation: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      designation: "President, CSS",
+      imageUrl: "src/assets/armansir.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      designation: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Prof. Aasim Zafar",
+      designation: "Ex. President, CSS",
+      imageUrl: "src/assets/aasimsir.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      designation: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Dr. Mohammad Nadeem",
+      designation: "Convener, CSS",
+      imageUrl: "src/assets/nadeemsir.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      designation: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Dr. Faisal Anwar",
+      designation: "Mentor, CSS",
+      imageUrl: "src/assets/faisalsir.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      designation: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      designation: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      designation: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Dr. Faraz Masood",
+      designation: "Mentor, CSS",
+      imageUrl: "src/assets/farazsir.jpg",
     },
   ];
 
   const tech: TechTeam[] = [
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Tuba Rahman",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\10055968_hbbxdv.jpg",
+      name: "Syed Umar Ali",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Aftab Ansari",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Saurav Singh",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
   ];
 
   const lead: LeadTeam[] = [
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Tuba Rahman",
+      role: "Coordinator",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Syed Umar Ali",
+      role: "Secretory",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\10055968_hbbxdv.jpg",
+      name: "Aftab Ansari",
+      role: "Student Mentor",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Mohd Ali Abbas",
+      role: "Lead CyberSecurity",
+      class: "M.Sc. IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Syed Bilal Ahmad",
+      role: "Lead AI/ML",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Sameer",
+      role: "Lead Web Development",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Saurav Singh",
+      role: "Lead DSA",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
   ];
 
   const graphics: GraphicsTeam[] = [
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Mohd Ali Abbas",
+      class: "M.Sc. IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Syed Bilal Ahmad",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Sameer",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\10055968_hbbxdv.jpg",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Saurav Singh",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
   ];
 
   const pr: PRTeam[] = [
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Tuba Rahman",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Syed Umar Ali",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Aftab Ansari",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Mohd Ali Abbas",
+      class: "M.Sc. IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\10055968_hbbxdv.jpg",
+      name: "Syed Bilal Ahmad",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
-    },
-    {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Saurav Singh",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
   ];
 
   const volunteer: VolunteerTeam[] = [
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\10055968_hbbxdv.jpg",
+      name: "Tuba Rahman",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Syed Umar Ali",
+      class: "B.Sc. (Research) IV",
+      imageUrl: "src/assets/name.jpg",
     },
     {
-      name: "Prof. Arman Rasool Faridi",
-      class: "Head of Department",
-      imageUrl: "public\\assests\\300-1704308884_qaqm1n.png",
+      name: "Aftab Ansari",
+      class: "MCA II",
+      imageUrl: "src/assets/name.jpg",
+    },
+    {
+      name: "Mohd Ali Abbas",
+      class: "M.Sc. IV",
+      imageUrl: "src/assets/name.jpg",
     },
   ];
 
@@ -330,6 +298,9 @@ const Team = () => {
                   <div className="details flex flex-col items-center justify-center">
                     <div className="text-[#2C4A41] name font-bold text-center tracking-tighter text-sm md:text-base">
                       {teamMember.name}
+                    </div>
+                    <div className="text-black name font-semibold text-center tracking-tighter text-xs md:text-base">
+                      {teamMember.role}
                     </div>
                     <div className="designation text-center text-gray-500 tracking-tighter text-sm md:text-base">
                       {teamMember.class}
