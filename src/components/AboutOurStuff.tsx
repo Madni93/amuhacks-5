@@ -1,7 +1,7 @@
 
 const AboutOurStuff = () => {
   return (
-    <section className="py-32 px-6 md:px-12 lg:px-24 bg-[#F0EAD6]">
+    <section id="about-events" className="py-32 px-6 md:px-12 lg:px-24 bg-[#F0EAD6]">
       <div className="md:max-w-7xl max-w-9/10 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
         
         {/* Left Side: Styled Image */}

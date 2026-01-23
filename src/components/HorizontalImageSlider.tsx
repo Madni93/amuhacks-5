@@ -2,8 +2,8 @@ import { useState, useEffect, useCallback } from 'react';
 
 const HorizontalImageSlider = () => {
   const images = [
-    'src/assets/conference.jpg',
-    'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1600&h=900&fit=crop',
+    './src/assets/conference.jpg',
+    './src/assets/tempcover.jpg',
     'src/assets/conference.jpg',
     'src/assets/conference.jpg',
     'src/assets/conference.jpg'
@@ -64,7 +64,7 @@ const HorizontalImageSlider = () => {
       
       <button
         onClick={goToPrevious}
-        className="absolute left-10 top-1/2 z-50 -translate-y-1/2 bg-transparent p-5 text-[#F0EAD6] backdrop-blur-md transition-all hover:scale-110 active:scale-90"
+        className="absolute left-10 top-1/2 z-5 -translate-y-1/2 bg-transparent p-5 text-[#F0EAD6] backdrop-blur-md transition-all hover:scale-110 active:scale-90"
       >
         <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M15 19l-7-7 7-7" />
@@ -73,7 +73,7 @@ const HorizontalImageSlider = () => {
 
       <button
         onClick={goToNext}
-        className="absolute right-10 top-1/2 z-50 -translate-y-1/2 rounded-full
+        className="absolute right-10 top-1/2 z-5 -translate-y-1/2 rounded-full
          p-5 text-[#F0EAD6] backdrop-blur-md transition-allhover:scale-110 active:scale-90"
       >
         <svg className="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">

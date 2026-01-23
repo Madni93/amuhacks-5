@@ -42,50 +42,50 @@ const Team = () => {
     {
       name: "Prof. Arman Rasool Faridi",
       designation: "President, CSS",
-      imageUrl: "src/assets/armansir.jpg",
+      imageUrl: "./src/assets/armansir.jpg",
     },
     {
       name: "Prof. Aasim Zafar",
       designation: "Ex. President, CSS",
-      imageUrl: "src/assets/aasimsir.jpg",
+      imageUrl: "./src/assets/aasimsir.jpg",
     },
     {
       name: "Dr. Mohammad Nadeem",
       designation: "Convener, CSS",
-      imageUrl: "src/assets/nadeemsir.jpg",
+      imageUrl: "./src/assets/nadeemsir.jpg",
     },
     {
       name: "Dr. Faisal Anwar",
       designation: "Mentor, CSS",
-      imageUrl: "src/assets/faisalsir.jpg",
+      imageUrl: "./src/assets/faisalsir.jpg",
     },
     {
       name: "Dr. Faraz Masood",
       designation: "Mentor, CSS",
-      imageUrl: "src/assets/farazsir.jpg",
+      imageUrl: "./src/assets/farazsir.jpg",
     },
   ];
 
   const tech: TechTeam[] = [
     {
-      name: "Tuba Rahman",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
-    },
-    {
-      name: "Syed Umar Ali",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
-    },
-    {
-      name: "Aftab Ansari",
+      name: "Lalit Kumar",
       class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
+      imageUrl: "./src/assets/lalit.jpg",
     },
     {
-      name: "Saurav Singh",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Mohd Amir Hasan",
+      class: "B.Sc. II",
+      imageUrl: "./src/assets/amir.jpg",
+    },
+    {
+      name: "Madni Mahmood",
+      class: "B.Sc. II",
+      imageUrl: "./src/assets/madni.jpg",
+    },
+    {
+      name: "Sadaf Shahid",
+      class: "B.Sc. I",
+      imageUrl: "./src/assets/sadaf.jpg",
     },
   ];
 
@@ -94,127 +94,117 @@ const Team = () => {
       name: "Tuba Rahman",
       role: "Coordinator",
       class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      imageUrl: "./src/assets/tuba.jpg",
     },
     {
       name: "Syed Umar Ali",
       role: "Secretory",
       class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      imageUrl: "./src/assets/umar.jpg",
     },
     {
       name: "Aftab Ansari",
       role: "Student Mentor",
       class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
+      imageUrl: "./src/assets/name.jpg",
     },
     {
       name: "Mohd Ali Abbas",
       role: "Lead CyberSecurity",
-      class: "M.Sc. IV",
-      imageUrl: "src/assets/name.jpg",
+      class: "M.Sc. II",
+      imageUrl: "./src/assets/ali.jpg",
     },
     {
       name: "Syed Bilal Ahmad",
       role: "Lead AI/ML",
       class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
+      imageUrl: "./src/assets/bilal.jpg",
     },
     {
       name: "Sameer",
       role: "Lead Web Development",
       class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
+      imageUrl: "./src/assets/sameer.jpg",
     },
     {
       name: "Saurav Singh",
       role: "Lead DSA",
       class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      imageUrl: "./src/assets/saurav.jpg",
     },
   ];
 
   const graphics: GraphicsTeam[] = [
     {
-      name: "Mohd Ali Abbas",
-      class: "M.Sc. IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Shoaib Ahmad",
+      class: "B.Sc. III",
+      imageUrl: "./src/assets/shoib.jpg",
     },
     {
-      name: "Syed Bilal Ahmad",
-      class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
+      name: "Homa Mahmood",
+      class: "B.Sc. IV",
+      imageUrl: "./src/assets/homa.jpg",
     },
     {
-      name: "Sameer",
-      class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
+      name: "Sayyada Afifa",
+      class: "B.Sc. II",
+      imageUrl: "./src/assets/afifa.jpg",
     },
     {
-      name: "Saurav Singh",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Haseen Fatima",
+      class: "B.Sc. II",
+      imageUrl: "./src/assets/name.jpg",
+    },
+    {
+      name: "Musaib Bin Sameer",
+      class: "B.Sc. I",
+      imageUrl: "./src/assets/musaib.jpg",
     },
   ];
 
   const pr: PRTeam[] = [
     {
-      name: "Tuba Rahman",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Ahamad Mustafa Khowaja",
+      class: "B.Sc. II",
+      imageUrl: "./src/assets/ahmad.jpg",
     },
     {
-      name: "Syed Umar Ali",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Mohammad Areeb",
+      class: "B.Sc. II",
+      imageUrl: "./src/assets/areeb.jpg",
     },
     {
-      name: "Aftab Ansari",
-      class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
+      name: "Maria Ali",
+      class: "B.Sc. II",
+      imageUrl: "./src/assets/maria.jpg",
     },
     {
-      name: "Mohd Ali Abbas",
-      class: "M.Sc. IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Nuwaira Noor",
+      class: "B.Sc. I",
+      imageUrl: "./src/assets/nuwaira.jpg",
     },
     {
-      name: "Syed Bilal Ahmad",
-      class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
-    },
-    {
-      name: "Saurav Singh",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Efa Arif",
+      class: "B.Sc. IV",
+      imageUrl: "./src/assets/efa.jpg",
     },
   ];
 
   const volunteer: VolunteerTeam[] = [
     {
-      name: "Tuba Rahman",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Mohd Aquib",
+      class: "B.Sc. IV",
+      imageUrl: "./src/assets/aquib.jpg",
     },
     {
-      name: "Syed Umar Ali",
-      class: "B.Sc. (Research) IV",
-      imageUrl: "src/assets/name.jpg",
-    },
-    {
-      name: "Aftab Ansari",
-      class: "MCA II",
-      imageUrl: "src/assets/name.jpg",
-    },
-    {
-      name: "Mohd Ali Abbas",
-      class: "M.Sc. IV",
-      imageUrl: "src/assets/name.jpg",
+      name: "Zainul Abideen",
+      class: "B.Sc. I",
+      imageUrl: "./src/assets/zain.jpg",
     },
   ];
 
   return (
-    <div className="flex flex-col gap-6 items-center justify-center bg-[#F0EAD6] w-full h-full py-8">
+    <div id="teams" className="flex flex-col gap-6 items-center justify-center bg-[#F0EAD6] w-full h-full py-8">
       <div className="flex items-center space-x-3 bg-white/50 border border-[#93E9BE] px-6 py-2 rounded-full mb-6 shadow-sm">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute h-full w-full rounded-full bg-[#93E9BE] opacity-75"></span>
@@ -223,7 +213,7 @@ const Team = () => {
             <span className="text-[#2C4A41] text-[10px] font-black uppercase tracking-[0.4em]">Meet the team</span>
           </div>
 
-          <h2 className="text-[#2C4A41] text-3xl md:text-7xl font-black mb-6 tracking-tighter leading-[0.9]">
+          <h2 className="text-[#2C4A41] text-3xl md:text-5xl font-black mb-6 tracking-tighter leading-[0.9]">
             Faculty Members
           </h2>
       <div className="faculty-members grid grid-cols-2 md:flex md:flex-wrap gap-10 justify-center items-center md:px-16 m-4">
@@ -231,7 +221,7 @@ const Team = () => {
           <div className="team flex flex-col items-center justify-center gap-2">
         <div className="relative rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
           <img
-          className="rounded-full aspect-square object-cover w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className="rounded-full aspect-square object-cover w-full transition-transform duration-700 group-hover:scale-110"
           src={facultyMember.imageUrl}
           alt={facultyMember.name}
           />
@@ -248,7 +238,7 @@ const Team = () => {
         ))}
       </div>
 
-      <h2 className="text-[#2C4A41] text-3xl md:text-7xl font-black mb-6 tracking-tighter leading-[0.9]">
+      <h2 className="text-[#2C4A41] text-3xl md:text-5xl font-black mb-6 tracking-tighter leading-[0.9]">
             Team Members
           </h2>
       <div className="team-members flex flex-wrap gap-12 w-full justify-center items-center py-4 ">
@@ -290,7 +280,7 @@ const Team = () => {
                 <div className="team flex flex-col items-center justify-center gap-2">
                   <div className="relative aspect-[4/5] rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
                     <img
-                      className="rounded-full aspect-square object-cover w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="rounded-full aspect-square object-cover w-full transition-transform duration-700 group-hover:scale-110"
                       src={teamMember.imageUrl}
                       alt={teamMember.name}
                     />

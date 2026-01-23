@@ -115,23 +115,10 @@ const EventSchedule: React.FC = () => {
       fee: "Registration Fee: ₹50 per participant",
       targetDate: "2026-02-13T18:00:00",
     },
-    {
-      title: "Ideathon (District Level)",
-      description:
-        "Propose original ideas for local societal issues and get judged on feasibility and potential grassroots impact.",
-      image:
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=800&auto=format&fit=crop",
-      location: "Conference Hall, Dept. of Computer Science, AMU",
-      dateTime: "14 February 2026 | 11:00 AM – 1:00 PM",
-      mode: "Offline",
-      platform: "DevFolio",
-      fee: "Registration Fee: Nil",
-      targetDate: "2026-02-14T11:00:00",
-    },
   ];
 
   return (
-    <section className="py-32 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden">
+    <section id="event-schedule" className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* HEADER */}
         <div className="relative mb-16 flex flex-col items-center text-center">
