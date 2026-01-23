@@ -2,11 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 
 const HorizontalImageSlider = () => {
   const images = [
-    './src/assets/conference.jpg',
-    './src/assets/tempcover.jpg',
-    'src/assets/conference.jpg',
-    'src/assets/conference.jpg',
-    'src/assets/conference.jpg'
+    '../src/assets/conference.jpg',
+    '../src/assets/tempcover.jpg',
+    '../src/assets/conference.jpg',
+    '../src/assets/conference.jpg',
+    '../src/assets/conference.jpg'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -81,14 +81,6 @@ const HorizontalImageSlider = () => {
         </svg>
       </button>
 
-      {/* <div className="absolute left-12 top-12 z-10">
-        <div className="flex items-center space-x-4">
-          <div className="h-1 w-12 text-[#71d2a1] rounded-full" />
-          <h1 className="text-[#F0EAD6] text-sm font-black uppercase tracking-[0.5em] drop-shadow-md">
-            AMUHACKS5.0
-          </h1>
-        </div>
-      </div> */}
 
       <div className="absolute bottom-12 w-full z-50 flex flex-col items-center space-y-8">
         <div className="flex items-center space-x-5">
