@@ -2,11 +2,11 @@ import { useState, useEffect, useCallback } from 'react';
 
 const HorizontalImageSlider = () => {
   const images = [
-    '../src/assets/conference.jpg',
-    '../src/assets/tempcover.jpg',
-    '../src/assets/conference.jpg',
-    '../src/assets/conference.jpg',
-    '../src/assets/conference.jpg'
+    '/assets/conference.jpg',
+    '/assets/tempcover.jpg',
+    '/assets/conference.jpg',
+    '/assets/conference.jpg',
+    '/assets/conference.jpg'
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);

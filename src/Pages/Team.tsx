@@ -42,27 +42,27 @@ const Team = () => {
     {
       name: "Prof. Arman Rasool Faridi",
       designation: "President, CSS",
-      imageUrl: "../src/assets/armansir.jpg",
+      imageUrl: "/assets/armansir.jpg",
     },
     {
       name: "Prof. Aasim Zafar",
       designation: "Ex. President, CSS",
-      imageUrl: "../src/assets/aasimsir.jpg",
+      imageUrl: "/assets/aasimsir.jpg",
     },
     {
       name: "Dr. Mohammad Nadeem",
       designation: "Convener, CSS",
-      imageUrl: "../src/assets/nadeemsir.jpg",
+      imageUrl: "/assets/nadeemsir.jpg",
     },
     {
       name: "Dr. Faisal Anwar",
       designation: "Mentor, CSS",
-      imageUrl: "../src/assets/faisalsir.jpg",
+      imageUrl: "/assets/faisalsir.jpg",
     },
     {
       name: "Dr. Faraz Masood",
       designation: "Mentor, CSS",
-      imageUrl: "../src/assets/farazsir.jpg",
+      imageUrl: "/assets/farazsir.jpg",
     },
   ];
 
@@ -70,22 +70,22 @@ const Team = () => {
     {
       name: "Lalit Kumar",
       class: "MCA II",
-      imageUrl: "../src/assets/lalit.jpg",
+      imageUrl: "/assets/lalit.jpg",
     },
     {
       name: "Mohd Amir Hasan",
       class: "B.Sc. II",
-      imageUrl: "../src/assets/amir.jpg",
+      imageUrl: "/assets/amir.jpg",
     },
     {
       name: "Madni Mahmood",
       class: "B.Sc. II",
-      imageUrl: "../src/assets/madni.jpg",
+      imageUrl: "/assets/madni.jpg",
     },
     {
       name: "Sadaf Shahid",
       class: "B.Sc. I",
-      imageUrl: "../src/assets/sadaf.jpg",
+      imageUrl: "/assets/sadaf.jpg",
     },
   ];
 
@@ -94,43 +94,43 @@ const Team = () => {
       name: "Tuba Rahman",
       role: "Coordinator",
       class: "B.Sc. (Research) IV",
-      imageUrl: "../src/assets/tuba.jpg",
+      imageUrl: "/assets/tuba.jpg",
     },
     {
       name: "Syed Umar Ali",
       role: "Secretory",
       class: "B.Sc. (Research) IV",
-      imageUrl: "../src/assets/umar.jpg",
+      imageUrl: "/assets/umar.jpg",
     },
     {
       name: "Aftab Ansari",
       role: "Student Mentor",
       class: "MCA II",
-      imageUrl: "../src/assets/name.jpg",
+      imageUrl: "/assets/name.jpg",
     },
     {
       name: "Mohd Ali Abbas",
       role: "Lead CyberSecurity",
       class: "M.Sc. II",
-      imageUrl: "../src/assets/ali.jpg",
+      imageUrl: "/assets/ali.jpg",
     },
     {
       name: "Syed Bilal Ahmad",
       role: "Lead AI/ML",
       class: "MCA II",
-      imageUrl: "../src/assets/bilal.jpg",
+      imageUrl: "/assets/bilal.jpg",
     },
     {
       name: "Sameer",
       role: "Lead Web Development",
       class: "MCA II",
-      imageUrl: "../src/assets/sameer.jpg",
+      imageUrl: "/assets/sameer.jpg",
     },
     {
       name: "Saurav Singh",
       role: "Lead DSA",
       class: "B.Sc. (Research) IV",
-      imageUrl: "../src/assets/saurav.jpg",
+      imageUrl: "/assets/saurav.jpg",
     },
   ];
 
@@ -138,27 +138,27 @@ const Team = () => {
     {
       name: "Shoaib Ahmad",
       class: "B.Sc. III",
-      imageUrl: "../src/assets/shoib.jpg",
+      imageUrl: "/assets/shoib.jpg",
     },
     {
       name: "Homa Mahmood",
       class: "B.Sc. IV",
-      imageUrl: "../src/assets/homa.jpg",
+      imageUrl: "/assets/homa.jpg",
     },
     {
       name: "Sayyada Afifa",
       class: "B.Sc. II",
-      imageUrl: "../src/assets/afifa.jpg",
+      imageUrl: "/assets/afifa.jpg",
     },
     {
       name: "Haseen Fatima",
       class: "B.Sc. II",
-      imageUrl: "../src/assets/name.jpg",
+      imageUrl: "/assets/name.jpg",
     },
     {
       name: "Musaib Bin Sameer",
       class: "B.Sc. I",
-      imageUrl: "../src/assets/musaib.jpg",
+      imageUrl: "/assets/musaib.jpg",
     },
   ];
 
@@ -166,27 +166,27 @@ const Team = () => {
     {
       name: "Ahamad Mustafa Khowaja",
       class: "B.Sc. II",
-      imageUrl: "../src/assets/ahmad.jpg",
+      imageUrl: "/assets/ahmad.jpg",
     },
     {
       name: "Mohammad Areeb",
       class: "B.Sc. II",
-      imageUrl: "../src/assets/areeb.jpg",
+      imageUrl: "/assets/areeb.jpg",
     },
     {
       name: "Maria Ali",
       class: "B.Sc. II",
-      imageUrl: "../src/assets/maria.jpg",
+      imageUrl: "/assets/maria.jpg",
     },
     {
       name: "Nuwaira Noor",
       class: "B.Sc. I",
-      imageUrl: "../src/assets/nuwaira.jpg",
+      imageUrl: "/assets/nuwaira.jpg",
     },
     {
       name: "Efa Arif",
       class: "B.Sc. IV",
-      imageUrl: "../src/assets/efa.jpg",
+      imageUrl: "/assets/efa.jpg",
     },
   ];
 
@@ -194,12 +194,12 @@ const Team = () => {
     {
       name: "Mohd Aquib",
       class: "B.Sc. IV",
-      imageUrl: "../src/assets/aquib.jpg",
+      imageUrl: "/assets/aquib.jpg",
     },
     {
       name: "Zainul Abideen",
       class: "B.Sc. I",
-      imageUrl: "../src/assets/zain.jpg",
+      imageUrl: "/assets/zain.jpg",
     },
   ];
 
