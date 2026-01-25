@@ -9,7 +9,7 @@ const AboutOurStuff = () => {
           <div className="absolute -inset-4 bg-[#93E9BE]/20 rounded-[2.5rem] transform -rotate-3 transition-transform group-hover:rotate-0" />
           <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden shadow-2xl border-[12px] border-white">
             <img 
-              src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&fit=crop" 
+              src="/assets/code.jpg" 
               alt="Hackathon event" 
               className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
@@ -25,7 +25,7 @@ const AboutOurStuff = () => {
           <div className="space-y-2">
             <div className="flex items-center space-x-3 text-[#71d2a1]">
               <div className="h-[1px] w-12 bg-[#7bd8a9]" />
-              <span className="text-xs font-black uppercase tracking-[0.3em]">The Legacy</span>
+              <span className="text-xs font-black uppercase tracking-[0.3em]">AMUHACKS5.0</span>
             </div>
             <h2 className="text-[#2C4A41] text-6xl md:text-7xl font-light tracking-tighter leading-none">
               About Our <br />
@@ -34,7 +34,7 @@ const AboutOurStuff = () => {
           </div>
 
           <p className="text-[#2C4A41]/70 text-lg leading-relaxed max-w-lg font-medium">
-            AMU Hacks 5.0 is the premier tech gathering where builders, visionaries, and code-enthusiasts meet to shape the future of digital solutions.
+            AMUHACKS 5.0 is a flagship tech event organized by the Computer Science Society, featuring multiple exciting activities including national-level hackathons, Capture The Flag (CTF) competitions, university-level contests, and attractive prizes for participants.
           </p>
 
           <div className="grid grid-cols-2 gap-8 py-4">
@@ -43,8 +43,8 @@ const AboutOurStuff = () => {
               <span className="text-[#2C4A41]/40 text-xs font-bold uppercase tracking-widest">Prize Pool</span>
             </div>
             <div>
-              <span className="block text-[#71d2a1] text-4xl font-black tracking-tighter">36h</span>
-              <span className="text-[#2C4A41]/40 text-xs font-bold uppercase tracking-widest">Hardcore Hacking</span>
+              <span className="block text-[#71d2a1] text-4xl font-black tracking-tighter">4+</span>
+              <span className="text-[#2C4A41]/40 text-xs font-bold uppercase tracking-widest">Events</span>
             </div>
           </div>
 

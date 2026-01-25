@@ -106,7 +106,7 @@ const Team = () => {
       name: "Aftab Ansari",
       role: "Student Mentor",
       class: "MCA II",
-      imageUrl: "/assets/name.jpg",
+      imageUrl: "/assets/aftab.jpg",
     },
     {
       name: "Mohd Ali Abbas",
@@ -153,7 +153,7 @@ const Team = () => {
     {
       name: "Haseen Fatima",
       class: "B.Sc. II",
-      imageUrl: "/assets/name.jpg",
+      imageUrl: "/assets/haseen.jpg",
     },
     {
       name: "Musaib Bin Sameer",
@@ -275,10 +275,10 @@ const Team = () => {
           <div className="flex flex-wrap gap-12 justify-center items-center p-10">
             <TabsContent
               value="lead"
-              className="w-full flex flex-wrap gap-12 justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
+              className="w-full gap-12 justify-center items-center grid grid-cols-2 md:flex md:flex-wrap md:px-16">
               {lead.map((teamMember) => (
                 <div className="team flex flex-col items-center justify-center gap-2">
-                  <div className="relative aspect-[4/5] rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
+                  <div className="relative rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
                     <img
                       className="rounded-full aspect-square object-cover w-full transition-transform duration-700 group-hover:scale-110"
                       src={teamMember.imageUrl}
@@ -301,12 +301,12 @@ const Team = () => {
             </TabsContent>
             <TabsContent
               value="tech"
-              className="w-full flex flex-wrap gap-12 justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
+              className="w-full justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
               {tech.map((teamMember) => (
                 <div className="team flex flex-col items-center justify-center gap-2">
-                  <div className="relative aspect-[4/5] rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
+                  <div className="relative rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
                     <img
-                      className="rounded-full aspect-square object-cover w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="rounded-full aspect-square object-cover w-full transition-transform duration-700 group-hover:scale-110"
                       src={teamMember.imageUrl}
                       alt={teamMember.name}
                     />
@@ -324,12 +324,12 @@ const Team = () => {
             </TabsContent>
             <TabsContent
               value="graphics"
-              className="w-full flex flex-wrap gap-12 justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
+              className="w-full justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
               {graphics.map((teamMember) => (
                 <div className="team flex flex-col items-center justify-center gap-2">
-                  <div className="relative aspect-[4/5] rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
+                  <div className="relative rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
                     <img
-                      className="rounded-full aspect-square object-cover w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="rounded-full aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       src={teamMember.imageUrl}
                       alt={teamMember.name}
                     />
@@ -347,12 +347,12 @@ const Team = () => {
             </TabsContent>
             <TabsContent
               value="pr"
-              className="w-full flex flex-wrap gap-12 justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
+              className="w-full justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
               {pr.map((teamMember) => (
                 <div className="team flex flex-col items-center justify-center gap-2">
-                  <div className="relative aspect-[4/5] rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
+                  <div className="relative rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
                     <img
-                      className="rounded-full aspect-square object-cover w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="rounded-full aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       src={teamMember.imageUrl}
                       alt={teamMember.name}
                     />
@@ -370,12 +370,12 @@ const Team = () => {
             </TabsContent>
             <TabsContent
               value="volunteer"
-              className="w-full flex flex-wrap gap-12 justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
+              className="w-full justify-center items-center grid grid-cols-2 md:flex md:flex-wrap gap-10 md:px-16">
               {volunteer.map((teamMember) => (
                 <div className="team flex flex-col items-center justify-center gap-2">
-                  <div className="relative aspect-[4/5] rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
+                  <div className="relative rounded-full aspect-square overflow-hidden shadow-xs w-32 sm:w-40 md:w-48 lg:w-56">
                     <img
-                      className="rounded-full aspect-square object-cover w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                      className="rounded-full aspect-square w-full object-cover transition-transform duration-700 group-hover:scale-110"
                       src={teamMember.imageUrl}
                       alt={teamMember.name}
                     />

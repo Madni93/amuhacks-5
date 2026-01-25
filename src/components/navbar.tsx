@@ -36,7 +36,7 @@ export function Navbar() {
         <NavigationMenu className="w-full max-w-none z-10 flex justify-around">
           <div className="logo">
             <a>
-              <img src="/assets/ahlogoc.png" alt="Logo" className="h-12 w-12 w-auto rounded aspect-square object-cover" />
+              <img src="/assets/ahlogo-rounded.png" alt="Logo" className="h-12 w-12 w-auto rounded aspect-square object-cover" />
           </a>
           </div>
           <NavigationMenuList className="bg-none flex w-full justify-start gap-4 md:gap-6 lg:gap-8">
