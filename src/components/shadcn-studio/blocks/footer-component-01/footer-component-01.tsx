@@ -8,7 +8,7 @@ const Footer = () => {
   
   return (
     <footer id='footer'>
-      <div className='text-sm mx-auto flex max-w-7xl items justify-between gap-3 p-10 max-md:flex-col sm:px-6 sm:py-6 md:gap-6 md:py-8'>
+      <div className='text-sm mx-auto flex max-w-7xl items justify-between gap-3 p-10 max-md:flex-col sm:px-6 sm:py-6 md:gap-6 md:py-8 jetbrains-mono'>
         <div className="flex text-left gap-2 whitespace-nowrap flex-col">
           <img src="/assets/ahlogo-rounded.png" alt="" className='w-15 rounded'/>
           <p>Computer Science Society</p>

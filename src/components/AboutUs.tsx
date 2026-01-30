@@ -2,14 +2,17 @@
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col gap-6 items-center justify-center bg-[#F0EAD6] w-full h-full py-12">
+    <div className="flex flex-col gap-6 items-center justify-center bg-[#F0EAD6] w-full h-full py-12 jetbrains-mono">
         <div className="flex items-center space-x-3 bg-white/50 border border-[#93E9BE] px-6 py-2 rounded-full mb-6 shadow-sm">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute h-full w-full rounded-full bg-[#93E9BE] opacity-75"></span>
               <span className="relative h-2 w-2 rounded-full bg-[#93E9BE]"></span>
             </span>
-            <span className="text-[#2C4A41] text-[10px] font-black uppercase tracking-[0.4em]">About Us</span>
+            <span className="text-[#2C4A41] text-[15px] font-black uppercase tracking-[0.4em]">About Us</span>
         </div>
+        <h2 className="text-[#2C4A41] text-5xl md:text-6xl font-black mb-6 tracking-tighter leading-[0.9]">
+            Computer Science Society
+          </h2>
         <div className="flex flex-col max-w-4/5 gap-5">
             <p className="text-[#2C4A41]/70 text-lg leading-relaxed max-w-75% font-medium">
                 The Computer Science Society (CSS) is the dynamic and official club of the Department of Computer Science at Aligarh Muslim University (AMU). With Prof. Arman Rasool Faridi as the esteemed President and Ms. Tuba Rahman as the dedicated Coordinator for this year's session, CSS continues to thrive as a hub of innovation and excellence.

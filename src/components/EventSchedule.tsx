@@ -123,7 +123,7 @@ const EventSchedule: React.FC = () => {
   ];
 
   return (
-    <section id="event-schedule" className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden">
+    <section id="event-schedule" className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden jetbrains-mono">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* HEADER */}
         <div className="relative mb-16 flex flex-col items-center text-center">
@@ -132,12 +132,12 @@ const EventSchedule: React.FC = () => {
               <span className="animate-ping absolute h-full w-full rounded-full bg-[#93E9BE] opacity-75"></span>
               <span className="relative h-2 w-2 rounded-full bg-[#93E9BE]"></span>
             </span>
-            <span className="text-[#2C4A41] text-[10px] font-black uppercase tracking-[0.4em]">
+            <span className="text-[#2C4A41] text-[15px] font-black uppercase tracking-[0.4em]">
               Event Lineup 2026
             </span>
           </div>
           <h2 className="text-[#2C4A41] text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-[0.9]">
-            AMUHACKS <span className="text-[#93E9BE] italic">Timeline</span>
+            AMUHACKS <span className="text-[#93E9BE] jetbrains-mono-italic">Timeline</span>
           </h2>
           <p className="text-[#2C4A41]/60 max-w-2xl text-lg font-medium italic">
             Innovate. Compete. Succeed.

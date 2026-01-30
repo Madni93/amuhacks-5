@@ -6,6 +6,7 @@ import Team from './Pages/Team';
 import Footer from './components/shadcn-studio/blocks/footer-component-01/footer-component-01';
 import EventSchedule from './components/EventSchedule';
 import AboutUs from './components/AboutUs';
+import Sponsors from './components/Sponsors';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <HorizontalImageSlider />
       <AboutOurStuff />
+      <Sponsors />
       <Team />
       <EventSchedule />
       <AboutUs />
