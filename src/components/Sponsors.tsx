@@ -12,15 +12,15 @@ const Sponsors = () => {
           </div>
           <div className="logo flex flex-col items-center gap-4 justify-center">
             <div>
-            <h2 className="text-3xl font-bold mb-4 uppercase text-center text-[#ceaf01]">Gold Sponsor</h2>
-              <div className="gold rounded-full bg-white py-8 px-20 mb-8 shadow-lg shadow-grey/30">
-                <img src="/assets/softentials.png" alt="Softentials" className="w-xs"/>
+            <h2 className="text-3xl font-bold mu-8 mb-4 uppercase text-center text-[#ceaf01]">Gold Sponsor</h2>
+              <div className="gold rounded-full bg-white py-6 md:py-8 px-16 md:px-20 mb-8 shadow-lg shadow-grey/30">
+                <img src="/assets/softentials.png" alt="Softentials" className="w-45 md:w-xs"/>
               </div>
             </div>
             <div>
-            <h2 className="text-3xl font-bold my-10 uppercase text-center text-[#5e5e5d]">Silver Sponsor</h2>
-              <div className="silver rounded-full bg-white py-8 px-20 mb-8 shadow-lg shadow-grey/30">
-                <img src="/assets/eelogo.png" alt="E&E" className="w-xs"/>
+            <h2 className="text-3xl font-bold mu-8 mb-4 uppercase text-center text-[#5e5e5d]">Silver Sponsor</h2>
+              <div className="silver rounded-full bg-white py-6 md:py-8 px-16 md:px-20 mb-8 shadow-lg shadow-grey/30">
+                <img src="/assets/eelogo.png" alt="E&E" className="w-45 md:w-xs"/>
               </div>
             </div>
           </div>

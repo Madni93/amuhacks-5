@@ -273,9 +273,9 @@ const EventSchedule: React.FC = () => {
               <div className="border-t-2 border-dashed border-[#2C4A41]/10 pt-6">
                  {selectedEvent.link ? (
                     <div className="flex items-center justify-between gap-4">
-                      <p className="text-[#2C4A41]/60 text-xs font-medium italic hidden md:block w-1/2">
+                        <p className="text-[#2C4A41]/80 text-xs font-medium italic hidden md:block w-1/2">
                         *Registration required before deadline
-                      </p>
+                        </p>
                       
                       {/* IMPROVED BUTTON: Bright Mint Background with Dark Text + Pop Effect */}
                       <a 
