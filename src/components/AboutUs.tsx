@@ -10,7 +10,7 @@ const AboutUs = () => {
             </span>
             <span className="text-[#2C4A41] text-[15px] font-black uppercase tracking-[0.4em]">About Us</span>
         </div>
-        <h2 className="text-[#2C4A41] text-5xl md:text-6xl font-black mb-6 tracking-tighter leading-[0.9]">
+        <h2 className="text-[#2C4A41] text-2xl md:text-4xl font-black mb-6 tracking-tighter leading-[0.9]">
             Computer Science Society
           </h2>
         <div className="flex flex-col max-w-4/5 gap-5">
