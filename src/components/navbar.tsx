@@ -7,7 +7,6 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import { NavigationMenuViewport } from "@radix-ui/react-navigation-menu";
 
 const ListItem = ({ className, title, children, href }: { className?: string; title: string; children: React.ReactNode; href: string }) => {
   return (
