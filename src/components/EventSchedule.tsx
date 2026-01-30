@@ -22,7 +22,26 @@ interface TimeLeft {
   seconds: number;
 }
 
-// --- Individual Timer Component for Accuracy ---
+// --- Icons ---
+const Icons = {
+  Calendar: () => (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+  ),
+  MapPin: () => (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+  ),
+  Monitor: () => (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+  ),
+  Ticket: () => (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 5v2m0 4v2m0 4v2M5 5a2 2 0 00-2 2v3a2 2 0 110 4v3a2 2 0 002 2h14a2 2 0 002-2v-3a2 2 0 110-4V7a2 2 0 00-2-2H5z" /></svg>
+  ),
+  Close: () => (
+    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" /></svg>
+  )
+};
+
+// --- Timer Component ---
 const EventTimer: React.FC<{ targetDate: string }> = ({ targetDate }) => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
 
@@ -30,9 +49,7 @@ const EventTimer: React.FC<{ targetDate: string }> = ({ targetDate }) => {
     const target = new Date(targetDate).getTime();
     const now = new Date().getTime();
     const diff = target - now;
-
     if (diff <= 0) return null;
-
     return {
       days: Math.floor(diff / (1000 * 60 * 60 * 24)),
       hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
@@ -48,12 +65,11 @@ const EventTimer: React.FC<{ targetDate: string }> = ({ targetDate }) => {
   }, [calculate]);
 
   if (!timeLeft) return <span>EVENT LIVE</span>;
-
   const f = (n: number) => n.toString().padStart(2, "0");
+  
   return (
-    <span className="text-[#93E9BE] font-black tracking-widest uppercase">
-      {f(timeLeft.days)}d : {f(timeLeft.hours)}h : {f(timeLeft.minutes)}m :{" "}
-      {f(timeLeft.seconds)}s
+    <span className="text-[#93E9BE] font-black tracking-widest uppercase drop-shadow-sm">
+      {f(timeLeft.days)}d : {f(timeLeft.hours)}h : {f(timeLeft.minutes)}m : {f(timeLeft.seconds)}s
     </span>
   );
 };
@@ -65,66 +81,59 @@ const EventSchedule: React.FC = () => {
   const events: EventCard[] = [
     {
       title: "Software Hackathon (National)",
-      description:
-        "The flagship event of AMUHACKS 5.0. A 30-hour innovation marathon where teams build software solutions for real-world problems.",
-      image:
-        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop",
-      location: "Virtual / Dept. of Computer Science, AMU",
-      dateTime: "10 Februaru 12:00 am – 11 February 6:00 am 2026",
+      description: "The flagship event of AMUHACKS 5.0. A 30-hour innovation marathon.",
+      image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop",
+      location: "Virtual / Dept. of CS",
+      dateTime: "10-11 Feb 2026",
       mode: "Online",
       platform: "DevFolio",
-      fee: "Registration Fee: Nil",
+      fee: "Free",
       targetDate: "2026-02-10T00:00:00",
       isMain: true,
       link: "https://www.amuhacks-5.online/",
     },
     {
       title: "Quiz Competition",
-      description:
-        "A competitive platform to test your knowledge across computer science fundamentals and emerging digital trends.",
-      image:
-        "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop",
-      location: "Conference Hall, Dept. of Computer Science, AMU",
-      dateTime: "11 February 2026 | 3:00 PM – 4:30 PM",
+      description: "Test your knowledge across computer science fundamentals.",
+      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop",
+      location: "Conference Hall, AMU",
+      dateTime: "11 Feb | 3:00 PM",
       mode: "Offline",
       platform: "On-Campus",
-      fee: "Registration Fee: ₹100 per team",
+      fee: "₹100 / team",
       targetDate: "2026-02-11T15:00:00",
       link: "https://forms.gle/p3EUuFGb3Vdtf8V96",
     },
     {
       title: "Coding Competition",
-      description:
-        "Showcase your algorithmic thinking and programming prowess in a multi-level challenge on HackerRank.",
-      image:
-        "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
-      location: "Conference Hall, Dept. of Computer Science, AMU",
-      dateTime: "10 February 2026 | 3:00 PM – 4:30 PM",
+      description: "Showcase your algorithmic thinking on HackerRank.",
+      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
+      location: "Conference Hall, AMU",
+      dateTime: "10 Feb | 3:00 PM",
       mode: "Offline",
       platform: "HackerRank",
-      fee: "Registration Fee: ₹40 per participant",
+      fee: "₹40 / person",
       targetDate: "2026-02-10T15:00:00",
       link: "https://forms.gle/BHogpSLVbo2aYP1V9",
     },
     {
       title: "Capture The Flag (CTF)",
-      description:
-        "A cybersecurity battleground focusing on cryptography, web security, and reverse engineering skills.",
-      image:
-        "https://certify.cybervista.net/wp-content/uploads/2020/05/BLOG_Capture-the-Flag.png",
+      description: "A cybersecurity battleground focusing on cryptography.",
+      image: "https://certify.cybervista.net/wp-content/uploads/2020/05/BLOG_Capture-the-Flag.png",
       location: "Virtual Environment",
-      dateTime: "13 February 2026 | 6:00 PM – 7:00 PM",
+      dateTime: "13 Feb | 6:00 PM",
       mode: "Online",
-      platform: "To be announced",
-      fee: "Registration Fee: ₹50 per participant",
+      platform: "TBA",
+      fee: "₹50 / person",
       targetDate: "2026-02-13T18:00:00",
-      link: "",
+      link: "https://unstop.com/o/XPOjzo4?lb=uur0IvgQ&utm_medium=Share&utm_source=WhatsApp",
     },
   ];
 
   return (
-    <section id="event-schedule" className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden jetbrains-mono">
+    <section className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden jetbrains-mono min-h-screen">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
+        
         {/* HEADER */}
         <div className="relative mb-16 flex flex-col items-center text-center">
           <div className="flex items-center space-x-3 bg-white/50 border border-[#93E9BE] px-6 py-2 rounded-full mb-6 shadow-sm">
@@ -139,9 +148,6 @@ const EventSchedule: React.FC = () => {
           <h2 className="text-[#2C4A41] text-5xl md:text-7xl font-black mb-6 tracking-tighter leading-[0.9]">
             AMUHACKS <span className="text-[#93E9BE] jetbrains-mono-italic">Timeline</span>
           </h2>
-          <p className="text-[#2C4A41]/60 max-w-2xl text-lg font-medium italic">
-            Innovate. Compete. Succeed.
-          </p>
         </div>
 
         {/* GRID */}
@@ -150,7 +156,9 @@ const EventSchedule: React.FC = () => {
             <div
               key={index}
               className="relative bg-white/40 border border-[#93E9BE]/20 rounded-[3rem] overflow-hidden group hover:shadow-2xl transition-all duration-500 flex flex-col hover:-translate-y-2">
-              <div className="absolute top-8 left-8 z-20 bg-[#2C4A41] text-[#F0EAD6] px-5 py-2 rounded-xl font-bold text-[10px] shadow-lg">
+              
+              {/* BIGGER TIMER */}
+              <div className="absolute top-8 left-8 z-20 bg-[#2C4A41]/90 backdrop-blur-md text-[#F0EAD6] px-5 py-3 rounded-2xl font-bold text-xs md:text-sm shadow-xl border border-[#93E9BE]/30">
                 <EventTimer targetDate={event.targetDate} />
               </div>
 
@@ -180,19 +188,8 @@ const EventSchedule: React.FC = () => {
                   <button
                     onClick={() => setSelectedEvent(event)}
                     className="text-[#2C4A41] font-black text-[10px] uppercase tracking-widest flex items-center hover:text-[#93E9BE] transition-colors">
-                    View Full Guidelines
-                    <svg
-                      className="ml-2 w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24">
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={3}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
+                    View Guidelines
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
                   </button>
                 </div>
               </div>
@@ -201,128 +198,114 @@ const EventSchedule: React.FC = () => {
         </div>
       </div>
 
-      {/* GUIDELINES MODAL */}
+      {/* COMPACT MODAL */}
       {selectedEvent && (
-        <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 md:p-12">
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
           <div
-            className="absolute inset-0 bg-[#2C4A41]/90 backdrop-blur-md"
+            className="absolute inset-0 bg-[#2C4A41]/60 backdrop-blur-sm transition-opacity"
             onClick={() => setSelectedEvent(null)}
           />
-          <div className="relative bg-[#F0EAD6] w-full max-w-2xl rounded-[3rem] shadow-2xl overflow-hidden border-2 border-[#93E9BE]/30 animate-in fade-in zoom-in duration-300">
-            <div className="p-10 md:p-14">
-              <button
-                onClick={() => setSelectedEvent(null)}
-                className="absolute top-8 right-8 text-[#2C4A41] hover:text-[#93E9BE] transition-colors">
-                <svg
-                  className="w-8 h-8"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2.5}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
-              </button>
+          
+          <div className="relative bg-[#F0EAD6] w-full max-w-lg rounded-[2rem] shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200 ring-4 ring-[#93E9BE]/20">
+            
+            {/* 1. Header Section */}
+            <div className="bg-[#2C4A41] p-8 md:p-10 relative overflow-hidden">
+               {/* Decorative elements */}
+               <div className="absolute top-0 right-0 -mr-10 -mt-10 w-40 h-40 bg-[#93E9BE] rounded-full blur-3xl opacity-20 pointer-events-none"></div>
+               <div className="absolute bottom-0 left-0 -ml-10 -mb-10 w-40 h-40 bg-[#93E9BE] rounded-full blur-3xl opacity-10 pointer-events-none"></div>
 
-              <span className="text-[#93E9BE] text-[10px] font-black uppercase tracking-[0.4em] block mb-4">
-                Official Guidelines
-              </span>
-              <h3 className="text-[#2C4A41] text-3xl md:text-5xl font-black md-8 md:mb-10 tracking-tighter leading-none">
-                {selectedEvent.title}
-              </h3>
+               <div className="relative z-10">
+                 <div className="flex justify-between items-start mb-4">
+                    <span className="text-[#93E9BE] text-[10px] font-black uppercase tracking-[0.3em] border border-[#93E9BE]/30 px-2 py-1 rounded">
+                      Official Guidelines
+                    </span>
+                    <button onClick={() => setSelectedEvent(null)} className="text-[#93E9BE] hover:text-white transition-colors">
+                      <Icons.Close />
+                    </button>
+                 </div>
+                 <h3 className="text-[#F0EAD6] text-3xl font-black tracking-tighter leading-none">
+                  {selectedEvent.title}
+                 </h3>
+               </div>
+            </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 h-fit md:gap-8 mb-10">
-                <div className="space-y-1">
-                  <span className="text-[#2C4A41]/40 text-[10px] font-black uppercase tracking-widest">
-                    Schedule
-                  </span>
-                  <p className="text-[#2C4A41] font-bold text-lg">
-                    {selectedEvent.dateTime}
-                  </p>
+            {/* 2. Grid Content */}
+            <div className="p-6 md:p-8">
+              <div className="grid grid-cols-2 gap-x-4 gap-y-6 mb-8">
+                {/* Cell 1 */}
+                <div className="flex flex-col space-y-1">
+                   <div className="flex items-center space-x-2 text-[#2C4A41]/50 mb-1">
+                      <Icons.Calendar />
+                      <span className="text-[10px] font-black uppercase tracking-widest">Schedule</span>
+                   </div>
+                   <p className="text-[#2C4A41] font-bold text-sm leading-tight">{selectedEvent.dateTime}</p>
                 </div>
-                <div className="space-y-1">
-                  <span className="text-[#2C4A41]/40 text-[10px] font-black uppercase tracking-widest">
-                    Mode & Platform
-                  </span>
-                  <p className="text-[#2C4A41] font-bold text-lg">
-                    {selectedEvent.mode} — {selectedEvent.platform}
-                  </p>
+
+                {/* Cell 2 */}
+                <div className="flex flex-col space-y-1">
+                   <div className="flex items-center space-x-2 text-[#2C4A41]/50 mb-1">
+                      <Icons.Monitor />
+                      <span className="text-[10px] font-black uppercase tracking-widest">Platform</span>
+                   </div>
+                   <p className="text-[#2C4A41] font-bold text-sm leading-tight">{selectedEvent.mode} on {selectedEvent.platform}</p>
                 </div>
-                <div className="space-y-1">
-                  <span className="text-[#2C4A41]/40 text-[10px] font-black uppercase tracking-widest">
-                    Location
-                  </span>
-                  <p className="text-[#2C4A41] font-bold text-lg">
-                    {selectedEvent.location}
-                  </p>
+
+                {/* Cell 3 */}
+                <div className="flex flex-col space-y-1">
+                   <div className="flex items-center space-x-2 text-[#2C4A41]/50 mb-1">
+                      <Icons.MapPin />
+                      <span className="text-[10px] font-black uppercase tracking-widest">Location</span>
+                   </div>
+                   <p className="text-[#2C4A41] font-bold text-sm leading-tight">{selectedEvent.location}</p>
                 </div>
-                <div className="space-y-1">
-                  <span className="text-[#2C4A41]/40 text-[10px] font-black uppercase tracking-widest">
-                    Registration
-                  </span>
-                  <p className="text-[#2C4A41] font-bold text-lg">
-                    {selectedEvent.fee}
-                  </p>
+
+                {/* Cell 4 */}
+                <div className="flex flex-col space-y-1">
+                   <div className="flex items-center space-x-2 text-[#2C4A41]/50 mb-1">
+                      <Icons.Ticket />
+                      <span className="text-[10px] font-black uppercase tracking-widest">Fee</span>
+                   </div>
+                   <p className="text-[#2C4A41] font-bold text-sm leading-tight">{selectedEvent.fee}</p>
                 </div>
               </div>
 
-              <div className="p-3 md:p-6 bg-white/50 rounded-2xl border border-[#93E9BE]/20">
-                <p className="text-[#2C4A41]/80 text-sm font-medium leading-relaxed italic">
-                  "Ensure you are registered on the respective platform before
-                  the deadline. Late entries will not be accommodated."
-                </p>
-              </div>
-              <div className="w-full flex flex-col items-center">
-                {selectedEvent.link &&
-                 selectedEvent.link.length !== 0 &&
-                 selectedEvent.targetDate &&
-                 new Date(selectedEvent.targetDate).getTime() > Date.now() && (
-                  <div
-                    className="
-                bg-[#2C4A41]
-                border border-[#93E9BE]/30
-                px-6 md:px-12
-                py-5 md:py-6
-                m-3
-                rounded-3xl md:rounded-full
-                flex flex-col md:flex-row
-                items-center
-                gap-4 md:gap-12
-                shadow-2xl
-                max-w-full
-                ">
-                    <div className="text-center md:text-left w-full">
-                      <h4 className="text-[#93E9BE] font-black uppercase tracking-widest text-xs mb-1">
-                        Registrations Open
-                      </h4>
-                      <p className="text-[#F0EAD6] text-sm font-medium opacity-70">
-                        Participate in AMUHACKS5.0
+              {/* 3. Divider & Footer */}
+              <div className="border-t-2 border-dashed border-[#2C4A41]/10 pt-6">
+                 {selectedEvent.link ? (
+                    <div className="flex items-center justify-between gap-4">
+                      <p className="text-[#2C4A41]/60 text-xs font-medium italic hidden md:block w-1/2">
+                        *Registration required before deadline
                       </p>
-                    </div>
-
-                    <button
-                      className="
-                bg-[#93E9BE]
-                text-[#2C4A41]
-                w-full md:w-auto
-                px-6 md:px-10
-                py-3 md:py-4
-                rounded-full
-                font-black uppercase tracking-widest text-sm
-                hover:bg-[#F0EAD6]
-                transition-all
-                ">
-                      <a href={selectedEvent.link} target="_blank" rel="noopener noreferrer">
+                      
+                      {/* IMPROVED BUTTON: Bright Mint Background with Dark Text + Pop Effect */}
+                      <a 
+                        href={selectedEvent.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="
+                          w-full md:w-auto 
+                          bg-[#93E9BE] text-[#2C4A41] 
+                          px-8 py-4 
+                          rounded-xl 
+                          font-black uppercase tracking-widest text-sm 
+                          hover:scale-105 hover:shadow-xl
+                          transition-all duration-300
+                          shadow-lg
+                          text-center
+                          flex-1
+                        "
+                      >
                         Register Now
                       </a>
-                    </button>
-                  </div>
-                )}
+                    </div>
+                 ) : (
+                   <p className="text-center text-[#2C4A41]/50 font-black uppercase text-xs tracking-widest">
+                     Registrations Closed
+                   </p>
+                 )}
               </div>
             </div>
+
           </div>
         </div>
       )}
