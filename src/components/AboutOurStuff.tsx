@@ -49,7 +49,7 @@ const AboutOurStuff = () => {
           </div>
 
           <button className="w-fit flex items-center space-x-4 bg-[#71d2a1] text-[#2C4A41]/70 px-10 py-4 rounded-full font-bold hover:bg-[#93E9BE] hover:text-[#2C4A41] transition-all hover:shadow-xl hover:shadow-[#93E9BE]/30">
-            <span>JOIN WHATSAPP COMMUNITY</span>
+            <span><a href="https://chat.whatsapp.com/EIr56rr5HNV9pwiUQHBMW8" target="_blank">JOIN WHATSAPP COMMUNITY</a></span>
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14 5l7 7-7 7" /></svg>
           </button>
         </div>

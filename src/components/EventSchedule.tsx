@@ -12,6 +12,7 @@ interface EventCard {
   fee: string;
   targetDate: string;
   isMain?: boolean;
+  link: string;
 }
 
 interface TimeLeft {
@@ -69,12 +70,13 @@ const EventSchedule: React.FC = () => {
       image:
         "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=800&auto=format&fit=crop",
       location: "Virtual / Dept. of Computer Science, AMU",
-      dateTime: "06 – 08 February 2026",
+      dateTime: "10 Februaru 12:00 am – 11 February 6:00 am 2026",
       mode: "Online",
       platform: "DevFolio",
       fee: "Registration Fee: Nil",
-      targetDate: "2026-02-06T18:00:00",
+      targetDate: "2026-02-10T00:00:00",
       isMain: true,
+      link: "https://www.amuhacks-5.online/",
     },
     {
       title: "Quiz Competition",
@@ -83,11 +85,12 @@ const EventSchedule: React.FC = () => {
       image:
         "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=800&auto=format&fit=crop",
       location: "Conference Hall, Dept. of Computer Science, AMU",
-      dateTime: "09 February 2026 | 3:00 PM – 5:00 PM",
+      dateTime: "11 February 2026 | 3:00 PM – 4:30 PM",
       mode: "Offline",
       platform: "On-Campus",
       fee: "Registration Fee: ₹100 per team",
-      targetDate: "2026-02-09T15:00:00",
+      targetDate: "2026-02-11T15:00:00",
+      link: "https://forms.gle/p3EUuFGb3Vdtf8V96",
     },
     {
       title: "Coding Competition",
@@ -96,11 +99,12 @@ const EventSchedule: React.FC = () => {
       image:
         "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
       location: "Conference Hall, Dept. of Computer Science, AMU",
-      dateTime: "10 February 2026 | 3:00 PM – 5:00 PM",
+      dateTime: "10 February 2026 | 3:00 PM – 4:30 PM",
       mode: "Offline",
       platform: "HackerRank",
       fee: "Registration Fee: ₹40 per participant",
       targetDate: "2026-02-10T15:00:00",
+      link: "https://forms.gle/BHogpSLVbo2aYP1V9",
     },
     {
       title: "Capture The Flag (CTF)",
@@ -109,11 +113,12 @@ const EventSchedule: React.FC = () => {
       image:
         "https://certify.cybervista.net/wp-content/uploads/2020/05/BLOG_Capture-the-Flag.png",
       location: "Virtual Environment",
-      dateTime: "13 February 2026 | 6:00 PM – 10:00 PM",
+      dateTime: "13 February 2026 | 6:00 PM – 7:00 PM",
       mode: "Online",
       platform: "To be announced",
       fee: "Registration Fee: ₹50 per participant",
       targetDate: "2026-02-13T18:00:00",
+      link: "",
     },
   ];
 
@@ -271,44 +276,51 @@ const EventSchedule: React.FC = () => {
                 </p>
               </div>
               <div className="w-full flex flex-col items-center">
-                <div
-                  className="
-  bg-[#2C4A41]
-  border border-[#93E9BE]/30
-  px-6 md:px-12
-  py-5 md:py-6
-  m-3
-  rounded-3xl md:rounded-full
-  flex flex-col md:flex-row
-  items-center
-  gap-4 md:gap-12
-  shadow-2xl
-  max-w-full
-">
-                  <div className="text-center md:text-left w-full">
-                    <h4 className="text-[#93E9BE] font-black uppercase tracking-widest text-xs mb-1">
-                      Registrations Open
-                    </h4>
-                    <p className="text-[#F0EAD6] text-sm font-medium opacity-70">
-                      Participate in AMUHACKS5.0
-                    </p>
-                  </div>
-
-                  <button
+                {selectedEvent.link &&
+                 selectedEvent.link.length !== 0 &&
+                 selectedEvent.targetDate &&
+                 new Date(selectedEvent.targetDate).getTime() > Date.now() && (
+                  <div
                     className="
-    bg-[#93E9BE]
-    text-[#2C4A41]
-    w-full md:w-auto
-    px-6 md:px-10
-    py-3 md:py-4
-    rounded-full
-    font-black uppercase tracking-widest text-sm
-    hover:bg-[#F0EAD6]
-    transition-all
-  ">
-                    Register Now
-                  </button>
-                </div>
+                bg-[#2C4A41]
+                border border-[#93E9BE]/30
+                px-6 md:px-12
+                py-5 md:py-6
+                m-3
+                rounded-3xl md:rounded-full
+                flex flex-col md:flex-row
+                items-center
+                gap-4 md:gap-12
+                shadow-2xl
+                max-w-full
+                ">
+                    <div className="text-center md:text-left w-full">
+                      <h4 className="text-[#93E9BE] font-black uppercase tracking-widest text-xs mb-1">
+                        Registrations Open
+                      </h4>
+                      <p className="text-[#F0EAD6] text-sm font-medium opacity-70">
+                        Participate in AMUHACKS5.0
+                      </p>
+                    </div>
+
+                    <button
+                      className="
+                bg-[#93E9BE]
+                text-[#2C4A41]
+                w-full md:w-auto
+                px-6 md:px-10
+                py-3 md:py-4
+                rounded-full
+                font-black uppercase tracking-widest text-sm
+                hover:bg-[#F0EAD6]
+                transition-all
+                ">
+                      <a href={selectedEvent.link} target="_blank" rel="noopener noreferrer">
+                        Register Now
+                      </a>
+                    </button>
+                  </div>
+                )}
               </div>
             </div>
           </div>

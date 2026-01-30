@@ -174,16 +174,6 @@ const Team = () => {
       imageUrl: "/assets/areeb.jpg",
     },
     {
-      name: "Maria Ali",
-      class: "B.Sc. II",
-      imageUrl: "/assets/maria.jpg",
-    },
-    {
-      name: "Nuwaira Noor",
-      class: "B.Sc. I",
-      imageUrl: "/assets/nuwaira.jpg",
-    },
-    {
       name: "Efa Arif",
       class: "B.Sc. IV",
       imageUrl: "/assets/efa.jpg",
@@ -192,14 +182,14 @@ const Team = () => {
 
   const volunteer: VolunteerTeam[] = [
     {
-      name: "Mohd Aquib",
-      class: "B.Sc. IV",
-      imageUrl: "/assets/aquib.jpg",
+      name: "Maria Ali",
+      class: "B.Sc. II",
+      imageUrl: "/assets/maria.jpg",
     },
     {
-      name: "Zainul Abideen",
+      name: "Nuwaira Noor",
       class: "B.Sc. I",
-      imageUrl: "/assets/zain.jpg",
+      imageUrl: "/assets/nuwaira.jpg",
     },
   ];
 

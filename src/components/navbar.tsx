@@ -7,6 +7,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
+import { NavigationMenuViewport } from "@radix-ui/react-navigation-menu";
 
 const ListItem = ({ className, title, children, href }: { className?: string; title: string; children: React.ReactNode; href: string }) => {
   return (
@@ -32,13 +33,13 @@ const ListItem = ({ className, title, children, href }: { className?: string; ti
 export function Navbar() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="w-full flex h-14 px-4 md:px-6">
-        <NavigationMenu className="w-full max-w-none z-10 flex justify-around">
-          <div className="logo">
+      <div className="w-full flex h-14 px-4 md:px-6 justify-around">
+        <div className="logo w-1/3 flex items-center justify-center">
             <a>
               <img src="/assets/ahlogo-rounded.png" alt="Logo" className="h-12 w-12 w-auto rounded aspect-square object-cover" />
           </a>
           </div>
+        <NavigationMenu className="w-full max-w-none z-10 flex">
           <NavigationMenuList className="bg-none flex w-full justify-start gap-4 md:gap-6 lg:gap-8">
             <NavigationMenuItem>
               <button onClick={() => window.location.href = "/"} className="hidden md:flex lg:flex bg-transparent hover:text-[#349665]">Home</button>
@@ -47,20 +48,20 @@ export function Navbar() {
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-[#71d2a1] data-[state=open]:bg-[#349665]">Events</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-75 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150">
-                  <ListItem href="#about-events" title="About">
-                    About our events
-                  </ListItem>
-                  <ListItem href="#event-schedule" title="Schedule">
-                    Event schedules and details.
-                  </ListItem>
-                </ul>
+              <ul className="grid w-60 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150">
+                <ListItem href="#about-events" title="About">
+                About our events
+                </ListItem>
+                <ListItem href="#event-schedule" title="Schedule">
+                Event schedules and details.
+                </ListItem>
+              </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger className="bg-[#71d2a1] data-[state=open]:bg-[#349665]">About</NavigationMenuTrigger>
               <NavigationMenuContent>
-                <ul className="grid w-75 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150">
+                <ul className="grid w-60 gap-3 p-4 md:w-125 md:grid-cols-2 lg:w-150">
                   <ListItem href="#teams" title="Our Team">
                     Meet the people behind.
                   </ListItem>
