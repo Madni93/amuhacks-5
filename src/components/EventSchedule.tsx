@@ -131,7 +131,7 @@ const EventSchedule: React.FC = () => {
   ];
 
   return (
-    <section className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden jetbrains-mono min-h-screen">
+    <section id="event-schedule" className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden jetbrains-mono min-h-screen">
       <div className="max-w-7xl mx-auto flex flex-col items-center">
         
         {/* HEADER */}
