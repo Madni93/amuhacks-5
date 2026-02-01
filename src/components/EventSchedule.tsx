@@ -126,9 +126,11 @@ const EventSchedule: React.FC = () => {
       platform: "TBA",
       fee: "₹50 / person",
       targetDate: "2026-02-13T18:00:00",
-      link: "https://unstop.com/o/XPOjzo4?lb=uur0IvgQ&utm_medium=Share&utm_source=WhatsApp",
+      link: "",
     },
   ];
+
+  //https://unstop.com/o/XPOjzo4?lb=uur0IvgQ&utm_medium=Share&utm_source=WhatsApp
 
   return (
     <section className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden jetbrains-mono min-h-screen">
@@ -300,7 +302,7 @@ const EventSchedule: React.FC = () => {
                     </div>
                  ) : (
                    <p className="text-center text-[#2C4A41]/50 font-black uppercase text-xs tracking-widest">
-                     Registrations Closed
+                     Registrations Closed or Coming Soon
                    </p>
                  )}
               </div>
