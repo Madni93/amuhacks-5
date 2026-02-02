@@ -126,11 +126,10 @@ const EventSchedule: React.FC = () => {
       platform: "TBA",
       fee: "₹50 / person",
       targetDate: "2026-02-13T18:00:00",
-      link: "",
+      link: "https://unstop.com/p/capture-the-flag-aligarh-muslim-university-amu-aligarh-1630899",
     },
   ];
 
-  //https://unstop.com/o/XPOjzo4?lb=uur0IvgQ&utm_medium=Share&utm_source=WhatsApp
 
   return (
     <section id="event-schedule" className="py-10 px-6 md:px-12 lg:px-24 bg-[#F0EAD6] font-sans overflow-hidden jetbrains-mono min-h-screen">
