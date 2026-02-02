@@ -83,6 +83,16 @@ const Team = () => {
       imageUrl: "/assets/madni.jpg",
     },
     {
+      name: "Khusnuma",
+      class: "B.Sc. III",
+      imageUrl: "/assets/name.jpg",
+    },
+    {
+      name: "Sumaniya",
+      class: "MCA I",
+      imageUrl: "/assets/name.jpg",
+    },
+    {
       name: "Sadaf Shahid",
       class: "B.Sc. I",
       imageUrl: "/assets/sadaf.jpg",
@@ -98,7 +108,7 @@ const Team = () => {
     },
     {
       name: "Syed Umar Ali",
-      role: "Secretory",
+      role: "Secretary",
       class: "B.Sc. (Research) IV",
       imageUrl: "/assets/umar.jpg",
     },
@@ -110,25 +120,25 @@ const Team = () => {
     },
     {
       name: "Mohd Ali Abbas",
-      role: "Lead CyberSecurity",
+      role: "CyberSecurity Lead",
       class: "M.Sc. II",
       imageUrl: "/assets/ali.jpg",
     },
     {
       name: "Syed Bilal Ahmad",
-      role: "Lead AI/ML",
+      role: "AI/ML Lead",
       class: "MCA II",
       imageUrl: "/assets/bilal.jpg",
     },
     {
       name: "Sameer",
-      role: "Lead Web Development",
+      role: "Web Development Lead",
       class: "MCA II",
       imageUrl: "/assets/sameer.jpg",
     },
     {
       name: "Saurav Singh",
-      role: "Lead DSA",
+      role: "DSA Lead",
       class: "B.Sc. (Research) IV",
       imageUrl: "/assets/saurav.jpg",
     },
